@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SpalshScreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/faceSpalsh"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/face_id_scan" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faceSpalsh"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="25dp"
+        android:text=" LETS TRACK SOME  "
+        android:textColor="@color/purple_200"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" HUMAN FACES  "
+        android:textColor="@color/purple_200"
+        android:layout_below="@+id/text"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
